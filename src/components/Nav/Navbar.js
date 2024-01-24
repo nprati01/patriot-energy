@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { HashLink as Link } from 'react-router-hash-link';
 import "./Navbar.css"
-import { isClickableInput } from '@testing-library/user-event/dist/utils';
 
 function Navbar()  {
     const [click, setClick] = useState(false);
@@ -53,7 +52,7 @@ function Navbar()  {
               </Link>
             </li>
           </ul>
-          <button></button>
+
         </div>
       </nav>
 
