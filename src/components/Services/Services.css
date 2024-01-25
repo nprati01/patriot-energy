@@ -1,3 +1,30 @@
+.services-container {
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
 h1{
-    /* border: solid 5px red; */
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.service-list1 {
+
+    position: relative;
+}
+.service-list2 {
+ 
+    position: relative;
 }
