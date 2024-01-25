@@ -1,10 +1,10 @@
 .navbar {
     background: whitesmoke;
-    height: 80px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -15,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    height: 70px;
     max-width: 1500px;
   }
   
@@ -47,7 +47,7 @@
   }
   
   .nav-item {
-    height: 80px;
+    height: 70px;
   }
   
   .nav-links {
@@ -55,12 +55,11 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0rem 1rem;
+    padding: 0rem 1.5rem;
     height: 100%;
   }
   
   .nav-links:hover {
-    /* border-bottom: 4px solid #A81F21; */
     background-color: #A81F21;
     color:#ffffff;
     transition: all 0.2s ease-out;
@@ -86,17 +85,18 @@
     .nav-menu {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       width: 100%;
       height: 90vh;
       position: absolute;
-      top: 80px;
+      top: 55px;
       left: -100%;
-      opacity: 1;
+      opacity: 2;
       transition: all 0.5s ease;
     }
   
     .nav-menu.active {
-      background: #ffffff;
+      background: whitesmoke;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
@@ -105,13 +105,14 @@
   
     .nav-links {
       text-align: center;
-      padding: 2rem;
+      padding: 0;
       width: 100%;
       display: table;
+      height: 30px;
     }
   
     .nav-links:hover {
-      background-color: #fff;
+      background-color: whitesmoke;
       color: #242424;
       border-radius: 0;
     }
@@ -138,24 +139,12 @@
       font-size: 2rem;
     }
   
-    .nav-links-mobile {
-      display: block;
-      text-align: center;
-      margin: 2rem auto;
-      border-radius: 4px;
-      width: 80%;
-      text-decoration: none;
-      font-size: 1.5rem;
-      background-color: transparent;
-      color: #000000;
-      padding: 14px 20px;
-      border: 1px solid #fff;
-      transition: all 0.3s ease-out;
-    }
   
-    .nav-links-mobile:hover {
-      background: #fff;
+    .nav-links:hover {
       color: #242424;
+      border-bottom: 6px solid #A81F21;
       transition: 250ms;
+      display: inline-block;
+      text-align:center;
     }
   }
