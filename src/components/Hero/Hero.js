@@ -5,8 +5,8 @@ import "./Hero.css";
 function Hero() {
   return (
     <div className='hero-container'>
-    <h1> Hero </h1>
-
+      <img className="hero-logo" src="../../images/logo_borderless.PNG"/>
+      <h1>Patriot Energy</h1>
     </div>
   )
 }
