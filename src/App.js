@@ -13,10 +13,10 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      <About />
-      <Services />
-      <Safety />
-      <Contact/>
+      <About URL={URL}/>
+      <Services URL={URL}/>
+      <Safety URl={URL}/>
+      <Contact URL={URL}/>
       <Footer />
 
     </div>
