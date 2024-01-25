@@ -12,6 +12,7 @@ function Navbar()  {
          <nav className="navbar">
         <div className="navbar-container">
           <Link to="#" className="navbar-logo" onClick={closeMobileMenu}>
+            <img className="nav-logo" alt='logo' src="../../images/logo_borderless.PNG"/>
             Patriot Energy
 
           </Link>
