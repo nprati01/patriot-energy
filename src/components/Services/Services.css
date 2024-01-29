@@ -15,16 +15,16 @@ h1{
     align-items: center;
 }
 
-.service-list {
+.service-lists {
     display: flex;
     flex-direction: row;
 }
 
 .service-list1 {
-
+    display: flex;
     position: relative;
 }
 .service-list2 {
- 
+    display: flex;
     position: relative;
 }

@@ -13,13 +13,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 
 }
 
 .hero-container::before {
     content: "";
-    background: url('../../../public/images/solar_energy_img01.jpg') center center/cover no-repeat;
+    background: url('../../../public/images/solar_engineer_img_02.jpg') center center/cover no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -28,17 +28,18 @@
     left: 0;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
     object-fit: contain;
-    opacity: 35%;
+    /* opacity: 35%; */
  }
 
 
 .hero-logo {
     position: relative;
-    height: 800px;
-    width: 800px;
+    height: 1000px;
+    width: 1100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     object-fit: contain;
+    opacity: 45%;
 }
