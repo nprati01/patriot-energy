@@ -3,7 +3,7 @@ import "./Safety.css";
 
 function Safety() {
   return (
-    <div>
+    <div id='safety'>
       <h1> Safety </h1>
     </div>
   );
