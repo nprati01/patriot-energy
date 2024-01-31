@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div className='hero-container'>
       <img className="hero-logo" src="../../images/logo_borderless.PNG"/>
-      <h1 className="hero-title">Patriot Energy</h1>
+      {/* <h1 className="hero-title">Patriot Energy</h1> */}
     </div>
   )
 }
