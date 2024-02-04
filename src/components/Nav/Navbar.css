@@ -118,13 +118,19 @@
       display: table;
       height: 30px;
     }
-  
-    .nav-links:hover {
+    
+    .nav-links:hover, .nav-links:active {
       background-color: whitesmoke;
       color: #242424;
-      border-radius: 0;
+      text-decoration-line: underline; 
+      text-decoration-color: #A81F21;
+      text-underline-offset: 5px;
+      text-decoration-thickness: 6px;
+      transition: 250ms;
+      display: inline-block;
+      text-align: center;
     }
-  
+
     .navbar-logo {
       position: absolute;
       font-size: 1.7rem;
@@ -149,12 +155,4 @@
     }
   
   
-    .nav-links:hover {
-      color: #242424;
-      /* background-color: #A81F21; */
-      border-bottom: 6px solid #A81F21;
-      transition: 250ms;
-      display: inline-block;
-      text-align:center;
-    }
   }
