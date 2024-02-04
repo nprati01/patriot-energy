@@ -9,8 +9,8 @@ function Safety() {
 
       <div className="safety-cards">
         <div className="card">
-          <div className="container-card">
-            <i className="fa-helmet-safety"></i>
+        <div className="container-card">
+            <i className="fa-solid fa-helmet-safety"></i>
             <p className="card-title">Saftey Card Title 1</p>
             <p className="card-description">A fact about the safety features associated with Patriot Energy LLC  100% safety Measures taken </p>
           </div>
