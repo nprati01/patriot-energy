@@ -14,7 +14,6 @@ function Navbar()  {
           <Link to="#" className="navbar-logo" onClick={closeMobileMenu}>
             <img className="nav-logo" alt='logo' src="../../images/logo_borderless.PNG"/>
             Patriot Energy
-
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -48,7 +47,7 @@ function Navbar()  {
             </li>
             <li className="nav-item">
               <Link
-                to="#contact-us"
+                to="#contact"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
