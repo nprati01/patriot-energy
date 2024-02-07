@@ -8,8 +8,9 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    font-family: 'Didact Gothic', sans-serif;
   }
-  
+
   .navbar-container {
     display: flex;
     justify-content: center;
@@ -17,7 +18,7 @@
     height: 70px;
     max-width: 1500px;
   }
-  
+
   .navbar-logo {
     color: #000000;
     justify-self: start;
@@ -32,12 +33,12 @@
     max-width: 65px;
     padding-right: 15px;
   }
-  
+
   .fa-typo3 {
     margin-left: 0.5rem;
     font-size: 1.8rem;
   }
-  
+
   .nav-menu {
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -48,11 +49,11 @@
     justify-content: end;
     margin-right: 2rem;
   }
-  
+
   .nav-item {
     height: 70px;
   }
-  
+
   .nav-links {
     color: #000000;
     display: flex;
@@ -61,30 +62,30 @@
     padding: 0rem 1.5rem;
     height: 100%;
   }
-  
+
   .nav-links:hover {
     background-color: #A81F21;
     color:#ffffff;
     transition: all 0.2s ease-out;
   }
-  
+
   .fa-bars {
     color: #A81F21;
   }
-  
+
   .nav-links-mobile {
     display: none;
   }
-  
+
   .menu-icon {
     display: none;
   }
-  
+
   @media screen and (max-width: 960px) {
     .NavbarItems {
       position: relative;
     }
-  
+
     .nav-menu {
       display: flex;
       flex-direction: column;
@@ -98,7 +99,7 @@
       opacity: 2;
       transition: all 0.5s ease;
     }
-  
+
     .nav-menu.active {
       background: whitesmoke;
       left: 0;
@@ -110,7 +111,7 @@
     .nav-logo {
         padding-right: 10px;
       }
-  
+
     .nav-links {
       text-align: center;
       padding: 0;
@@ -118,11 +119,11 @@
       display: table;
       height: 30px;
     }
-    
+
     .nav-links:hover, .nav-links:active {
       background-color: whitesmoke;
       color: #242424;
-      text-decoration-line: underline; 
+      text-decoration-line: underline;
       text-decoration-color: #A81F21;
       text-underline-offset: 5px;
       text-decoration-thickness: 6px;
@@ -138,7 +139,7 @@
       left: 0;
       transform: translate(15%, 20%);
     }
-  
+
     .menu-icon {
       display: block;
       position: absolute;
@@ -148,11 +149,11 @@
       font-size: 1.8rem;
       cursor: pointer;
     }
-  
+
     .fa-times {
       color: #A81F21;
       font-size: 2rem;
     }
-  
-  
+
+
   }
