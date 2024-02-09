@@ -1,7 +1,11 @@
+body {
+    font-family: 'Didact Gothic', sans-serif;
+}
 h1 {
     /* border: solid 5px red; */
 }
 .contact-form {
     display: flex;
     flex-flow: column;
+    font-family: 'Didact Gothic', sans-serif;
 }
