@@ -8,7 +8,7 @@ function Services() {
       <div className="service-lists">
         <div className="service-list">
           <h2>Renewable Contstuction</h2>
-          <img className="service-img" src="/images/equipment_img.jpg"></img>
+          <img className="service-img" src="/images/equipment_img.jpg" alt=""></img>
           <ul>
             <li> General Contracting </li>
             <li> Earthwork </li>
@@ -24,7 +24,7 @@ function Services() {
         </div>
         <div className="service-list">
           <h2>Oilfield Services</h2>
-          <img className="service-img" src="/images/equipment_img.jpg"></img>
+          <img className="service-img" src="/images/equipment_img.jpg" alt=""></img>
           <ul>
             <li> General Contracting </li>
             <li> Earthwork </li>
@@ -40,7 +40,7 @@ function Services() {
         </div>
         <div className="service-list">
           <h2>Heavy Civil Construction and Equipment</h2>
-          <img className="service-img" src="/images/equipment_img.jpg"></img>
+          <img className="service-img" src="/images/equipment_img.jpg" alt=""></img>
           <ul>
             <li> General Contracting </li>
             <li> Earthwork </li>
@@ -56,7 +56,7 @@ function Services() {
         </div>
         <div className="service-list">
           <h2>Water Technology and Treatment </h2>
-          <img className="service-img" src="/images/equipment_img.jpg"></img>
+          <img className="service-img" src="/images/equipment_img.jpg" alt=""></img>
           <ul>
             <li> General Contracting </li>
             <li> Earthwork </li>

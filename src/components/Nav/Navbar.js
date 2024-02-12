@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import { HashLink as Link } from 'react-router-hash-link';
 import "./Navbar.css"
 
@@ -20,9 +20,9 @@ function Navbar()  {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link 
-              to="#about" 
-              className="nav-links" 
+              <Link
+              to="#about"
+              className="nav-links"
               onClick={closeMobileMenu}>
                About
               </Link>
