@@ -17,22 +17,22 @@ function Services() {
   const services = [
     {
       name: "Renewable Contstuction",
-      service:
+      description:
         "General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation, General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
     },
     {
       name: "Oilfield Services",
-      service:
+      description:
         "General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation, General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
     },
     {
       name: "Heavy Civil Construction and Equipment",
-      service:
+      description:
         "General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation, General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
     },
     {
       name: "Water Technology and Treatment",
-      service:
+      description:
         "General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation, General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
     },
   ];
@@ -70,7 +70,7 @@ function Services() {
                     }}
                   ></span>
                   <h1>{service.name}</h1>
-                  <p>{service.quote}</p>
+                  <p>{service.description}</p>
                 </div>
               </li>
             ))}
