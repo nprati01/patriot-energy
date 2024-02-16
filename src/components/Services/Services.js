@@ -41,9 +41,6 @@ function Services() {
     <div className="services-container" id="services">
       <div className="col-sm-7 mx-auto">
         <header className="section-header text-center">
-          <span className="h1 d-block">
-            <span>❝</span>
-          </span>
           <h2>Services</h2>
         </header>
       </div>
