@@ -1,8 +1,18 @@
 import React from "react";
+import { useEffect, useState } from "react";
+
 import "./Services.css";
 
 function Services() {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % services.length);
+    }, 2000);
+
+    return () => clearInterval(timer);
+  }, []);
 
   const services = [
     {
@@ -34,13 +44,14 @@ function Services() {
           <span className="h1 d-block">
             <span>❝</span>
           </span>
-          <h2>Happy Customers</h2>
+          <h2>Services</h2>
         </header>
       </div>
 
       <div id="flex-container" className="services">
         <div id="left-zone">
           <ul className="list">
+            {services.map((service, index) => (
               <li key={index} className={`item item-${index}`}>
                 <input
                   type="radio"
@@ -65,6 +76,7 @@ function Services() {
                   <p>{service.quote}</p>
                 </div>
               </li>
+            ))}
           </ul>
         </div>
         <div id="right-zone"></div>
