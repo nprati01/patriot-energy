@@ -1,22 +1,12 @@
-import React from "react";
-import { useEffect, useState } from "react";
-
+import React, { useState } from "react";
 import "./Services.css";
 
 function Services() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % services.length);
-    }, 2000);
-
-    return () => clearInterval(timer);
-  }, []);
+  const [currentIndex, setCurrentIndex] = useState(null);
 
   const services = [
     {
-      name: "Renewable Contstuction",
+      name: "Renewable Construction",
       description:
         "General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation, General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
     },
@@ -37,6 +27,10 @@ function Services() {
     },
   ];
 
+  const handleTitleClick = (index) => {
+    setCurrentIndex(index === currentIndex ? null : index);
+  };
+
   return (
     <div className="services-container" id="services">
       <div className="col-sm-7 mx-auto">
@@ -50,33 +44,31 @@ function Services() {
           <ul className="list">
             {services.map((service, index) => (
               <li key={index} className={`item item-${index}`}>
-                <input
-                  type="radio"
-                  id={`radio_service-${index}`}
-                  name="basic_carousel"
-                  checked={currentIndex === index}
-                />
                 <label
                   className={`label_service-${index}`}
                   htmlFor={`radio_service-${index}`}
+                  onClick={() => handleTitleClick(index)}
                 >
                   {service.name}
                 </label>
-                <div className={`content-test content_service-${index}`}>
-                  <span
-                    className="picto"
-                    style={{
-                      backgroundImage: `url(${service.imageUrl})`,
-                    }}
-                  ></span>
-                  <h1>{service.name}</h1>
-                  <p>{service.description}</p>
-                </div>
               </li>
             ))}
           </ul>
         </div>
-        <div id="right-zone"></div>
+        <div id="right-zone">
+          {currentIndex !== null && (
+            <div className={`content-test content_service-${currentIndex}`}>
+              <span
+                className="picto"
+                style={{
+                  backgroundImage: `url(${services[currentIndex].imageUrl})`,
+                }}
+              ></span>
+              <h1>{services[currentIndex].name}</h1>
+              <p>{services[currentIndex].description}</p>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
