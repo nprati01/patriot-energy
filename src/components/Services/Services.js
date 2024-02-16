@@ -8,22 +8,22 @@ function Services() {
     {
       name: "Renewable Construction",
       description:
-        "General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation, General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
+        "General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
     },
     {
       name: "Oilfield Services",
       description:
-        "General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation, General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
+        "General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
     },
     {
       name: "Heavy Civil Construction and Equipment",
       description:
-        "General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation, General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
+        "General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
     },
     {
       name: "Water Technology and Treatment",
       description:
-        "General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation, General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
+        "General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
     },
   ];
 
@@ -44,6 +44,12 @@ function Services() {
           <ul className="list">
             {services.map((service, index) => (
               <li key={index} className={`item item-${index}`}>
+                <input
+                  type="radio"
+                  id={`radio_service-${index}`}
+                  name="services"
+                  className="service-radio"
+                />
                 <label
                   className={`label_service-${index}`}
                   htmlFor={`radio_service-${index}`}
@@ -58,12 +64,6 @@ function Services() {
         <div id="right-zone">
           {currentIndex !== null && (
             <div className={`content-test content_service-${currentIndex}`}>
-              <span
-                className="picto"
-                style={{
-                  backgroundImage: `url(${services[currentIndex].imageUrl})`,
-                }}
-              ></span>
               <h1>{services[currentIndex].name}</h1>
               <p>{services[currentIndex].description}</p>
             </div>
