@@ -33,7 +33,7 @@ function Services() {
 
   return (
     <div className="services-container" id="services">
-          <h2>Services</h2>
+          <h2>SERVICES</h2>
 
       <div id="flex-container" className="services">
         <div id="left-zone">

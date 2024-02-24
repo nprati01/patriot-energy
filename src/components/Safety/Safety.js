@@ -5,7 +5,7 @@ import "./Safety.css";
 function Safety() {
   return (
     <div className="safety-container" id="safety">
-      <h1 className="container-title"> Safety </h1>
+      <h2 className="container-title"> SAFETY </h2>
 
       <div className="safety-cards">
         <div className="card">

@@ -5,26 +5,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* min-height: 100vh; */
 }
 
 .about-heading {
     display: flex;
-    /* height: 100%; */
     width: 100%;
-    /* background: rgb(40,44,122); */
-    /* padding-top: 40px; */
-    /* padding-bottom: 40px; */
-
-
 }
-.about-heading h1 {
+
+.about-heading h2 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5px 40px;
-    font-size: 60px;
-    padding-top: 60px;
+    font-size: 50px;
+    padding: 150px 0 20px 0;
     font-family: 'Didact Gothic', sans-serif;
 }
 
