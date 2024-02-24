@@ -60,7 +60,7 @@ function Services() {
         <div id="right-zone">
           {currentIndex !== null && (
             <div className="content-test">
-              <h1>{services[currentIndex].name}</h1>
+              <h3>{services[currentIndex].name}</h3>
               <p>{services[currentIndex].description}</p>
             </div>
           )}
