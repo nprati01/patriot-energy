@@ -33,11 +33,7 @@ function Services() {
 
   return (
     <div className="services-container" id="services">
-      <div className="col-sm-7 mx-auto">
-        <header className="section-header text-center">
           <h2>Services</h2>
-        </header>
-      </div>
 
       <div id="flex-container" className="services">
         <div id="left-zone">
