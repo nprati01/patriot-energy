@@ -1,8 +1,12 @@
+.safety-container {
+    padding: 0 80px;
+}
+
 .cards-container {
     display: flex;
     flex-flow: column;
     align-items: center;
-    max-width: 1120px;
+    max-width: 1400px;
     width:90%;
 
 }

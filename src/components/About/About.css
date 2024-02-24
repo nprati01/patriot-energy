@@ -4,17 +4,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.about-heading {
+  }
+  
+  .about-heading {
     display: flex;
     width: 100%;
-}
-
-.about-container {
+    max-width: 1400px;
+  }
+  
+  .about-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    max-width: 1400px;
     background: rgba(40, 44, 122, 0.9);
     border: 1px solid #DADADA;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
