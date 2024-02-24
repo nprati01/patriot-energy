@@ -9,21 +9,25 @@ function Services() {
       name: "Renewable Construction",
       description:
         "Renewable Construction General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
+      image: "/images/equipment_img.jpg"
     },
     {
       name: "Oilfield Services",
       description:
         "Oilfield Services General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
+      image: "/images/equipment_img.jpg"
     },
     {
       name: "Heavy Civil Construction and Equipment",
       description:
         "Heavy Civil Construction and Equipment General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
+      image: "/images/equipment_img.jpg"
     },
     {
       name: "Water Technology and Treatment",
       description:
         "Water Technology and Treatment General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
+      image: "/images/equipment_img.jpg"
     },
   ];
 
@@ -60,8 +64,11 @@ function Services() {
         <div id="right-zone">
           {currentIndex !== null && (
             <div className="content-test">
+            <div>
               <h3>{services[currentIndex].name}</h3>
               <p>{services[currentIndex].description}</p>
+            </div>
+              {/* <img src={services[currentIndex].image} alt={services[currentIndex].name} className="services-img"/> */}
             </div>
           )}
         </div>

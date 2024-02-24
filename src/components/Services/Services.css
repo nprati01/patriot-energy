@@ -40,7 +40,7 @@
   opacity: 1;
 }
 
-label {
+.item label {
   display: flex;
   flex-direction: column;
   opacity: 0.5;
@@ -55,6 +55,7 @@ label:hover {
 }
 
 .content-test{
+  display: flex;
   position: absolute;
   transform: translateY(100%);
   width: 100%;
@@ -63,6 +64,23 @@ label:hover {
   max-width: 50%;
   text-align: center;
 }
+
+
+/* .services-img {
+  height: 200px;
+  padding-left: 20px;
+  position: relative;
+}
+.services-img::after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(to bottom, transparent 0%, white 100%);
+  margin-top: -150px;
+  height: 150px;
+  width: 100%;
+  content: '';
+} */
+
 
 #right-zone {
   width: 100%;
@@ -135,6 +153,7 @@ input:checked ~ #right-zone .content-test .content-test.h2 {
 
   #left-zone {
     width: 85%;
+    height: 50%;
   }
 
   #left-zone .list {
