@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Services.css";
 
 function Services() {
-  const [currentIndex, setCurrentIndex] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const services = [
     {
@@ -28,7 +28,7 @@ function Services() {
   ];
 
   const handleTitleClick = (index) => {
-    setCurrentIndex(index === currentIndex ? null : index);
+    setCurrentIndex(index);
   };
 
   return (
