@@ -1,6 +1,5 @@
 .about {
-    margin: 100px 80px;
-    padding: 0;
+    padding: 0px 80px;
     display:flex;
     flex-direction: column;
     justify-content: center;

@@ -1,3 +1,7 @@
+.services-container {
+  padding: 0 80px;
+}
+
 #flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -5,7 +9,6 @@
   align-items: center;
   width: 100%;
   min-height: 400px;
-  max-width: 1000px;
   margin: auto;
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -55,7 +58,6 @@ label:hover {
 .content-test{
   position: absolute;
   transform: translateY(100%);
-  height: 50%;
   width: 100%;
   transition: opacity 3s ease-out, transform 3s ease-out;
   pointer-events: none;
@@ -79,15 +81,11 @@ input:checked ~ #right-zone .content-test .content-test.h2 {
   pointer-events: auto;
 }
 
+
 @media (min-width: 480px) {
   #flex-container {
     flex-direction: row;
-    min-height: auto;
     height: 400px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
   }
 
   #left-zone .list {
@@ -111,18 +109,10 @@ input:checked ~ #right-zone .content-test .content-test.h2 {
 
 @media (max-width: 480px) {
   #flex-container {
-    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     width: 95%;
     height: 450px;
     margin: 10px;
-    background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    flex-direction: column;
-    position: relative;
   }
 
   .content-test{
