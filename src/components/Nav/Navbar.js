@@ -13,7 +13,7 @@ function Navbar()  {
         <div className="navbar-container">
           <Link to="#" className="navbar-logo" onClick={closeMobileMenu}>
             <img className="nav-logo" alt='logo' src="../../images/logo_borderless.PNG"/>
-            Patriot Energy
+            PATRIOT ENERGY
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
