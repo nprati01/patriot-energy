@@ -14,8 +14,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .hero-container::before {
@@ -44,4 +42,10 @@
     align-items: center;
     object-fit: contain;
     opacity: 85%;
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        max-height: 400px;
+    }
 }
