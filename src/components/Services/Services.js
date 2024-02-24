@@ -8,22 +8,22 @@ function Services() {
     {
       name: "Renewable Construction",
       description:
-        "General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
+        "Renewable Construction General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
     },
     {
       name: "Oilfield Services",
       description:
-        "General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
+        "Oilfield Services General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
     },
     {
       name: "Heavy Civil Construction and Equipment",
       description:
-        "General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
+        "Heavy Civil Construction and Equipment General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
     },
     {
       name: "Water Technology and Treatment",
       description:
-        "General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
+        "Water Technology and Treatment General Contracting, Earthwork, Aggregate, Erosion Control, Excavation and Reclamation",
     },
   ];
 
@@ -59,7 +59,7 @@ function Services() {
         </div>
         <div id="right-zone">
           {currentIndex !== null && (
-            <div className={`content-test content_service-${currentIndex}`}>
+            <div className="content-test">
               <h1>{services[currentIndex].name}</h1>
               <p>{services[currentIndex].description}</p>
             </div>
